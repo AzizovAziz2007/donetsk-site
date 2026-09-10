@@ -40,4 +40,4 @@
 ## 🚀 Как запустить проект локально
 1. Склонируйте репозиторий на локальный компьютер:
    ```bash
-   git clone https://github.com/ВАШ_НИК/donetsk-site.git
+   git clone https://github.com/AzizovAziz2007/donetsk-site.git

@@ -1,0 +1,17 @@
+1. Главная страница (index.html):
+html:5>body>header>h1+p^nav>ul>li*6>a^^main>section.about-city>h2+img.float-img+p*2+blockquote>q+cite^^section.city-gallery>h2+div.gallery-grid>figure*6>img+figcaption^^section.city-news>h2+article*2>h3+p>time^p^^footer>p
+
+2. О разработчике (about.html):
+html:5>body>header>h1+p^nav>ul>li*6>a^^main>section.about-dev>h2+img.dev-avatar+div.dev-bio>h3+p*3^^section.skills-section>h2+(div.skill-item>div.skill-info>span*2^div.progress-track>div.progress-bar)*4+p>progress^^section.faq-section>h2+details*2>summary+p^^footer>p
+
+3. История города (history.html):
+html:5>body>header>h1+p^nav>ul>li*6>a^^main>section>h2+p+div.table-responsive>table.history-table>caption+thead>tr>th*4^^tbody>tr*10>td*4^^tfoot>tr>td[colspan=4]^^^footer>p
+
+4. Инфраструктура (infrastructure.html):
+html:5>body>header>h1+p^nav>ul>li*6>a^^main>section.geo-section>h2+p*2+div.map-wrapper>iframe^small>a^^section.districts-section>h2+p+ol.districts-list>li*9>strong^^section.transport-section>h2+p+article.transport-card*2>h3+p*2>meter^^footer>p
+
+5. Культура и искусство (culture.html):
+html:5>body>header>h1+p^nav>ul>li*6>a^^main>section.culture-venues>h2+div.gallery-grid>article.venue-card*3>figure>img+figcaption^h3+p^^section.famous-people>h2+p+dl.people-list>(dt+dd)*4^^footer>p
+
+6. Форма обратной связи (contact.html):
+html:5>body>header>h1+p^nav>ul>li*6>a^^main>section.feedback-card>h2+p+form.site-form>fieldset>legend+(div.form-group>label+input+small.hint)*2+div.form-group>label+input^div.form-group>label+select>optgroup*2>option*3^^div.form-group>label+textarea+small.hint^div.form-group.checkbox-group>input[type=checkbox]+label^div.form-actions>button[type=submit].btn-submit+button[type=reset].btn-reset^^footer>p

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Донецк — Обратная связь</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <h1>Донецк — Сердце Донбасса</h1>
+    <p>Город миллиона роз и металлургической славы</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="about.html">О разработчике</a></li>
+        <li><a href="history.html">История города</a></li>
+        <li><a href="infrastructure.html">Инфраструктура</a></li>
+        <li><a href="culture.html">Культура и искусство</a></li>
+        <li><a href="contact.html">Контакты</a></li>
+    </ul>
+</nav>
+
+<main>
+    <section class="feedback-card">
+        <h2>Обратная связь</h2>
+        <p>У вас есть предложения по благоустройству или вопросы к автору проекта? Заполните форму ниже. Поля с символом <strong>*</strong> обязательны для заполнения.</p>
+
+        <form action="#" method="POST" class="site-form">
+            <fieldset>
+                <legend>Ваше сообщение</legend>
+
+                <div class="form-group">
+                    <label for="name">Ваше имя *:</label>
+                    <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Иван Иванов"
+                            required
+                            minlength="2"
+                            maxlength="30"
+                            pattern="^[A-Za-zА-Яа-яЁё\s]+$">
+                    <small class="hint">Только буквы, минимум 2 символа.</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Электронная почта (Email) *:</label>
+                    <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="ivan@mail.ru"
+                            required>
+                    <small class="hint">Обязательно наличие @ и домена (например, .ru).</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Контактный телефон:</label>
+                    <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            placeholder="+7 (949) 000-00-00"
+                            pattern="^\+?[0-9\s\-\(\)]+$">
+                </div>
+
+                <div class="form-group">
+                    <label for="district">Ваш район Донецка:</label>
+                    <select id="district" name="district">
+                        <optgroup>
+                            <option value="voroshilov">Ворошиловский</option>
+                            <option value="kiev">Киевский</option>
+                            <option value="kalinin">Калининский</option>
+                            <option value="kuibyshev">Куйбышевский</option>
+                            <option value="lenin">Ленинский</option>
+                            <option value="kirov">Кировский</option>
+                            <option value="petrov">Петровский</option>
+                            <option value="budyonnov">Будённовский</option>
+                            <option value="proletar">Пролетарский</option>
+                        </optgroup>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Текст сообщения *:</label>
+                    <textarea
+                            id="message"
+                            name="message"
+                            rows="5"
+                            placeholder="Напишите ваш отзыв или предложение..."
+                            required
+                            minlength="10"></textarea>
+                    <small class="hint">Минимум 10 символов.</small>
+                </div>
+
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="agree" name="agree" required>
+                    <label for="agree">Я согласен на обработку персональных данных *</label>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn-submit">Отправить сообщение</button>
+                    <button type="reset" class="btn-reset">Очистить поля</button>
+                </div>
+            </fieldset>
+        </form>
+    </section>
+</main>
+
+<a href="#" class="back-to-top" title="Наверх">↑</a>
+
+<footer>
+    <p>&copy; 2026 История города Донецка. Лабораторная работа №1.</p>
+</footer>
+
+</body>
+</html>
